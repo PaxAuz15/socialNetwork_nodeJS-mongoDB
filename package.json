@@ -1,0 +1,20 @@
+{
+  "name": "socialNetwork_nodeJS-mongoDB",
+  "version": "1.0.0",
+  "description": "Social network created with NodeJS and MongoDB. System created for the Database Administration class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaxAuz15/socialNetwork_nodeJS-mongoDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaxAuz15/socialNetwork_nodeJS-mongoDB/issues"
+  },
+  "homepage": "https://github.com/PaxAuz15/socialNetwork_nodeJS-mongoDB#readme"
+}
