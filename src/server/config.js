@@ -1,6 +1,12 @@
 const path = require('path'); //path permite unir directorios con join 
 const exphbs = require('express-handlebars'); //motor de plantillas
 
+// middlewares
+const morgan = require('morgan'); 
+const multer = require('multer');
+const express = require('express');
+
+
 module.exports = app =>{
     
     // settings
@@ -17,7 +23,16 @@ module.exports = app =>{
     }));
     app.set('view engine', '.hbs'); //utilizar el motor de plantilla
 
-    // middlewares
+    // middlewares: funciones de preprocesado
+    app.use(morgan('dev'));
+
+        /*cuando me envien una imagen, a traves de multer, 
+        la coloca en la direccion '../public/upload/temp' y solo se recibira una imagen*/
+    app.use(multer({dest: path.join(__dirname, '../public/upload/temp')}).single('image')); 
+    app.use(express.urlencoded({extended: false})); //sirve para recibir datos que vienen desde formularios desde plantillas html
+        /*  para el manejo de los likes, se utiliza peticiones http que vienen a traves de AJAX
+            para que la pagina no se refresque porque un usuario da like*/
+    app.use(express.json());
 
     // routes
 
