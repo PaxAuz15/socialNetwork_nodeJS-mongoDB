@@ -6,6 +6,8 @@ const morgan = require('morgan');
 const multer = require('multer');
 const express = require('express');
 
+//routes
+const routes = require('../routes/index');
 
 module.exports = app =>{
     
@@ -35,6 +37,7 @@ module.exports = app =>{
     app.use(express.json());
 
     // routes
+    routes(app);
 
     //errorhandlers
     
