@@ -14,7 +14,7 @@ module.exports = app =>{
     
     // settings
     app.set('port', process.env.PORT || 3000); //configuracion del puerto
-    app.set('views', path.join(__dirname, 'views')); //definir donde esta la carpeta de las vistas 
+    app.set('views', path.join(__dirname, '../views')); //definir donde esta la carpeta de las vistas 
     //configuracion de motor de plantilla - handlebars
     app.engine('.hbs', exphbs({ // '.hbs' es '.handlebars'
         defaultLayout: 'main', //marco principal
