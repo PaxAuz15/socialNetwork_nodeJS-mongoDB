@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>auzPic</title>
-
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/a91250c333.js" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     -->
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/public/css/styles.css">
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -20,8 +24,17 @@
             </a>
         </div>
     </nav>
+    
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-8">
+                {{{ body }}} <!-- sentencia para utilizar esta plantilla -->
+            </div>
+            <div class="col-md-4">
 
-    {{{ body }}} <!-- sentencia para utilizar esta plantilla -->
-
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
