@@ -13,7 +13,9 @@ ctrl.create = async(req, res) => {
     console.log(imgUrl);
     const imageTempPath = req.file.path;
     const ext = path.extname(req.file.originalname).toLowerCase();
-    const targetPath = path.resolve('src/public/upload/${imgUrl}${ext}')
+    //const targetPath = path.resolve(`src/public/upload/${imgUrl}${ext}`)
+    const targetPath = path.resolve('src/public/upload/'+imgUrl+' '+ ext)
+
 
     if(ext === '.png' || ext === '.jpg' || ext === '.jepg' || ext === '.gif'){
         await fs.rename(imageTempPath, targetPath);
