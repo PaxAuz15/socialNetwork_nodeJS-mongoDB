@@ -7,7 +7,7 @@ const {Image} = require('../models');
 const ctrl = {};
 
 ctrl.index = (req, res) => {
-
+   res.render('image');
 };
 
 ctrl.create = (req, res) => {
