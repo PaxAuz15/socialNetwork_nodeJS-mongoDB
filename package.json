@@ -19,7 +19,7 @@
   "homepage": "https://github.com/PaxAuz15/socialNetwork_nodeJS-mongoDB#readme",
   "dependencies": {
     "errorhandler": "^1.5.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.1.0",
     "fs-extra": "^8.1.0",
     "md5": "^2.2.1",
